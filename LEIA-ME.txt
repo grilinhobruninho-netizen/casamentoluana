@@ -1,0 +1,22 @@
+CASAMENTO DA LUANA E FERNANDO — SITE DE ENVIO DE FOTOS
+
+O QUE ESTE PACOTE FAZ
+- Convidados enviam fotos sem criar conta e sem fazer login.
+- Aceita JPG, PNG e WEBP, até 10 MB por foto, até 20 fotos por envio.
+- Painel administrativo com senha para visualizar, baixar e excluir fotos.
+
+COMO PUBLICAR
+1. Você precisa de uma hospedagem que aceite PHP 8.0 ou superior.
+2. Envie TODOS os arquivos e pastas deste pacote para a pasta pública do site (normalmente public_html).
+3. Antes de publicar, abra config.php e troque ADMIN_PASSWORD por uma senha forte e exclusiva.
+4. A hospedagem precisa permitir gravação na pasta dados/fotos. Se necessário, ajuste as permissões da pasta para 750 ou 755 conforme orientação da hospedagem.
+5. Acesse o endereço do site para testar o envio.
+6. O painel fica em https://SEU-DOMINIO/admin.php.
+
+IMPORTANTE
+- A senha inicial do painel neste pacote é: LuanaFernando#2026
+  TROQUE-A no config.php antes de publicar.
+- Ative HTTPS/SSL na hospedagem.
+- Faça backup periódico das fotos.
+- O QR Code definitivo precisa apontar para a URL pública da página (por exemplo https://seudominio.com).
+- Este pacote é a aplicação pronta para instalar; ainda não está publicado na internet.
