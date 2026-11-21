@@ -1,6 +1,10 @@
 <?php
-// Altere a senha de administrador antes de publicar o site.
-define('ADMIN_PASSWORD', 'LuanaFernando#2026');
+// Defina ADMIN_PASSWORD como variável de ambiente no servidor antes de publicar.
+$adminPassword = getenv('ADMIN_PASSWORD');
+if ($adminPassword === false || $adminPassword === '') {
+    throw new RuntimeException('Configure a variável de ambiente ADMIN_PASSWORD no servidor.');
+}
+define('ADMIN_PASSWORD', $adminPassword);
 define('MAX_FILE_BYTES', 10 * 1024 * 1024);
 define('MAX_FILES_PER_SEND', 20);
 define('UPLOAD_DIR', __DIR__ . '/dados/fotos');
